@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useFetch } from "./hooks/useFetch";
 import UlList from "./components/list";
+import { Atom } from "react-loading-indicators";
 function App() {
   const {
     data: posts,
@@ -12,7 +13,9 @@ function App() {
     return <h2>{error}</h2>;
   }
   if (isPending) {
-    return <h2>Loading ...</h2>;
+    return<div className="flex justify-center items-center min-h-screen">
+    <Atom color="#2e4e2e" size="medium" text="" textColor="#a8a6a6" />
+</div>;
   }
   const p = posts?.products || [];
   console.log(p);
