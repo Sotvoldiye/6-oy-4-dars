@@ -12,7 +12,7 @@ const Modal = ({ products, setInmodal, inModal }) => {
   const rewiew = products.reviews;
   console.log(rewiew);
   return (
-    <div className=" absolute w-auto  z-100 left-auto/2 top-auto/2 overfolw-hidden transform -translate-x-1/2 -translate-y-1/2 ">
+    <div className=" absolute w-auto  z-100 left-1/2 top-auto/2 overfolw-hidden transform -translate-x-1/2 -translate-y-1/2 ">
    <div className="bg-gray-100 bg-opacity-50 flex flex-col px-2 py-2 rounded-2xl">
    <button
         onClick={() => setInmodal(false)}
